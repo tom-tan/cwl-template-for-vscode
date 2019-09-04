@@ -1,20 +1,21 @@
-version: "3.0"
+version: "3.7"
 services:
   dind:
     image: docker:stable-dind
     privileged: true
     environment:
       DOCKER_TLS_CERTDIR: ''
-    working_dir: /workdir
+    working_dir: /workspace
     volumes:
-      - $PWD:/workdir
+      - ..:/workspace
+    command: dockerd-entrypoint.sh
   dev:
     build:
       context: .
       dockerfile: Dockerfile.dev
     environment:
       DOCKER_HOST: tcp://dind:2375/
-    working_dir: /workdir
+    working_dir: /workspace
     volumes:
-      - $PWD:/workdir
-    command: bash
+      - ..:/workspace
+    command: sleep infinity
