@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  dind:
+    image: docker:stable-dind
+    privileged: true
+    environment:
+      DOCKER_TLS_CERTDIR: ''
+    working_dir: /workdir
+    volumes:
+      - $PWD:/workdir
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      DOCKER_HOST: tcp://dind:2375/
+    working_dir: /workdir
+    volumes:
+      - $PWD:/workdir
