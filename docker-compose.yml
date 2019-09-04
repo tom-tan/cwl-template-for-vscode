@@ -17,3 +17,4 @@ services:
     working_dir: /workdir
     volumes:
       - $PWD:/workdir
+    command: bash
