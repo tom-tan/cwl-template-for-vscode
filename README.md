@@ -25,7 +25,10 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
   ```markdown
   [![Actions Status](https://github.com/{$USER}/{$REPO}/workflows/{$WORKFLOW_NAME}/badge.svg)](https://github.com/{$USER}/{$REPO}/actions)
   ```
-- [WIP] CircleCI
+- CircleCI
+  ```markdown
+[![CircleCI](https://circleci.com/gh/{$USER}/{$REPO}.svg?style=svg)](https://circleci.com/gh/{$USER}/{$REPO})
+  ```
 - [WIP] Gitlab CI
 
 ## TODO
