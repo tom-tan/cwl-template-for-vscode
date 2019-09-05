@@ -30,6 +30,7 @@ jobs:
       - run: *exec_upgrade_pip
       - run: *install_cwl_runner
       - run: *run_test
+
   buildlocal:
     working_directory: /tmp/cwl_test
     machine: true
