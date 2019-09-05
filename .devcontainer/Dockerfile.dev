@@ -19,6 +19,6 @@ RUN add-apt-repository \
     $(lsb_release -cs) \
     stable"
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends docker-ce-cli
+RUN apt-get install -y --no-install-recommends docker-ce-cli nodejs
 
 ENV DEBIAN_FRONTEND dialog
