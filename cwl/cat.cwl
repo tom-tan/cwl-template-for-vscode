@@ -1,5 +1,8 @@
 cwlVersion: v1.0
 class: CommandLineTool
+requirements:
+  - class: DockerRequirement
+    dockerPull: alpine:latest
 baseCommand: cat
 arguments: [$(inputs.file)]
 inputs:

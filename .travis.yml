@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.7"
+services:
+  - docker
 install:
   - pip install cwl-runner cwltest
 script:
