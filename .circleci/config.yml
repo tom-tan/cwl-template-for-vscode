@@ -1,7 +1,7 @@
 version: 2
 references:
   commands:
-install_cwl_runner: &install_cwl_runner
+    install_cwl_runner: &install_cwl_runner
       name: "Install cwl-runner"
       command: "sudo pip install cwltest cwl-runner"
     run_test: &run_test
