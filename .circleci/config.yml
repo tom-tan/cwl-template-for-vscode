@@ -21,4 +21,5 @@ jobs:
           command: |
             env
             docker ps
+            unset DOCKER_MACHINE_NAME
       - run: *run_test
