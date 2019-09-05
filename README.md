@@ -3,6 +3,8 @@ This is a template to write CWL definition with VSCode with remote container ext
 
 [![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template)
 
+[![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
+
 ## How to use
 - Copy this repository to your local machine.
 - Open the copied repository with remote container extension of VSCode.
@@ -27,16 +29,19 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
   ```
 - CircleCI
   ```markdown
-[![CircleCI](https://circleci.com/gh/{$USER}/{$REPO}.svg?style=svg)](https://circleci.com/gh/{$USER}/{$REPO})
+  [![CircleCI](https://circleci.com/gh/{$USER}/{$REPO}.svg?style=svg)](https://circleci.com/gh/{$USER}/{$REPO})
   ```
-- [WIP] Gitlab CI
+- Gitlab CI
+  ```markdown
+  [![pipeline status](https://gitlab.com/$USER/$REPO/badges/master/pipeline.svg)](https://gitlab.com/$USER/$REPO/commits/master)
+  ```
 
 ## TODO
-- [ ] make a template for CI settings for CI services
+- [x] make a template for CI settings for CI services
   - [x] Travis CI
   - [x] Github Actions
-  - [ ] CircleCI
-  - [ ] Gitlab CI
+  - [x] CircleCI
+  - [x] Gitlab CI
 - [ ] A tutorial to write CWL
   - Maybe use Zatsu method
 
