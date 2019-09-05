@@ -17,6 +17,10 @@ This is a template to write CWL definition with VSCode with remote container ext
 - A template for `cwltest`
 
 ## Supported CI services
+This template provides configurations for several CI services.
+All you have to do is just integrating your repository with CI services.
+Each CI service executes tests listed in `test.yml` by using `cwltest`.
+
 Replace `$USER` with your account name and `$REPO` with your repository name.
 - Travis CI
   ```markdown
@@ -37,11 +41,6 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
   ```
 
 ## TODO
-- [x] make a template for CI settings for CI services
-  - [x] Travis CI
-  - [x] Github Actions
-  - [x] CircleCI
-  - [x] Gitlab CI
 - [ ] A tutorial to write CWL
   - Maybe use Zatsu method
 
