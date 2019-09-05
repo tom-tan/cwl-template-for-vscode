@@ -1,7 +1,7 @@
 image: python:3.7-buster
 
 services:
-  - docker:dind
+  - docker:stable-dind
 
 variables:
   DOCKER_HOST: tcp://docker:2375/
