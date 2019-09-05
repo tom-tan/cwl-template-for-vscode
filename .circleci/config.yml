@@ -16,4 +16,9 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: *install_cwl_runner
+      - run:
+          name: "test docker"
+          command: |
+            env
+            docker ps
       - run: *run_test
