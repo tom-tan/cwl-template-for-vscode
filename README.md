@@ -17,14 +17,12 @@ This is a template to write CWL definition with VSCode with remote container ext
 ## Supported CI services
 Replace `$USER` with your account name and `$REPO` with your repository name.
 - Travis CI
-```markdown
-[![Build Status](https://travis-ci.com/$USER/$REPO.svg?branch=master)](https://travis-ci.com/$USER/$REPO)
-```
+  ```markdown
+  [![Build Status](https://travis-ci.com/$USER/$REPO.svg?branch=master)](https://travis-ci.com/$USER/$REPO)
+  ```
 - Github Actions
 - [WIP] CircleCI
 - [WIP] Gitlab CI
-
-
 
 ## TODO
 - [ ] make a template for CI settings for CI services
