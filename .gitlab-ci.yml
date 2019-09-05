@@ -17,7 +17,7 @@ test:
   script:
     # - mkdir -p /builds/$CI_PROJECT_PATH/tmp
     # - export TMPDIR=/builds/$CI_PROJECT_PATH/tmp
-    - cwltest --test test.yml--junit-xml=results.xml
+    - cwltest --test test.yml --junit-xml=results.xml
   artifacts:
     reports:
       junit: results.xml
