@@ -1,10 +1,7 @@
 version: 2
 references:
   commands:
-    setup_repo: &setup_repo
-      name: "Git clone"
-      command: "git clone $CIRCLE_REPOSITORY_URL /tmp/_circleci_local_build_repo"
-    install_cwl_runner: &install_cwl_runner
+install_cwl_runner: &install_cwl_runner
       name: "Install cwl-runner"
       command: "sudo pip install cwltest cwl-runner"
     run_test: &run_test
@@ -16,7 +13,6 @@ jobs:
     docker:
       - image: circleci/python:3.7-buster
     steps:
-      - run: *setup_repo
       - checkout
       - run: *install_cwl_runner
       - run: *run_test
