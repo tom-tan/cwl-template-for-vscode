@@ -12,18 +12,9 @@ references:
       command: "sudo cwltest --verbose --test test.yml"
 jobs:
   build:
-    working_directory: /tmp/cwl_test
-    machine:
-      image: circleci/python:3.7-buster
-    steps:
-      - run: *setup_repo
-      - checkout
-      - run: *install_cwl_runner
-      - run: *run_test
-
-  buildlocal:
-    working_directory: /tmp/cwl_test
-    machine: true
+    # working_directory: /tmp/cwl_test
+    docker:
+      - image: circleci/python:3.7-buster
     steps:
       - run: *setup_repo
       - checkout
