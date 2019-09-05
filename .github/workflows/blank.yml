@@ -12,7 +12,7 @@ jobs:
     - name: Install prerequirements
       run: |
         sudo apt-get install -y python3-pip python3-wheel python3-setuptools build-essential
-        sudo pip3 install --system cwltest cwl-runner
+        sudo pip3 install --system cwltest cwl-runner ruamel.yaml==0.15.97
     - name: Run test
       run: |
         cwltest --test test.yml
