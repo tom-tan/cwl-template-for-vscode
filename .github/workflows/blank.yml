@@ -1,0 +1,18 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install prerequirements
+      run: |
+        sudo apt-get install -y python3-pip python3-wheel python3-setuptools build-essential
+        sudo pip3 install --system cwltest cwl-runner ruamel.yaml==0.15.97
+    - name: Run test
+      run: |
+        cwltest --test test.yml
