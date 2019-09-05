@@ -1,6 +1,8 @@
 # What is this?
 This is a template to write CWL definition with VSCode with remote container extension.
 
+[![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template)
+
 ## How to use
 - Copy this repository to your local machine.
 - Open the copied repository with remote container extension of VSCode.
@@ -12,10 +14,22 @@ This is a template to write CWL definition with VSCode with remote container ext
   - `docker` (you can use it without any configurations)
 - A template for `cwltest`
 
+## Supported CI services
+Replace `$USER` with your account name and `$REPO` with your repository name.
+- Travis CI
+```markdown
+[![Build Status](https://travis-ci.com/$USER/$REPO.svg?branch=master)](https://travis-ci.com/$USER/$REPO)
+```
+- Github Actions
+- [WIP] CircleCI
+- [WIP] Gitlab CI
+
+
+
 ## TODO
 - [ ] make a template for CI settings for CI services
-  - [ ] Travis CI
-  - [ ] Github Actions
+  - [x] Travis CI
+  - [x] Github Actions
   - [ ] CircleCI
   - [ ] Gitlab CI
 - [ ] A tutorial to write CWL
