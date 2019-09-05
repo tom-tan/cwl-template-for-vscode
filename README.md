@@ -24,6 +24,7 @@ This is a template to write CWL definition with VSCode with remote container ext
 ## License
 This repository is licensed under the [Unlicense](LICENSE) (a.k.a. Public Domain).
 Under this license, you can:
+- freely use the contents,
 - freely modify the contents,
 - freely change the license, and
 - freely distribute it to others!
