@@ -1,0 +1,9 @@
+- job: job/cat-job.yml
+  tool: cwl/cat.cwl
+  output:
+    out:
+      class: File
+      basename: output.txt
+      checksum: sha1$2af1a59da667eb4aedb182248c1d91741df7e24d
+      size: 31
+  doc: Template for cwltest
