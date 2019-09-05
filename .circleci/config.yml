@@ -22,6 +22,7 @@ jobs:
           name: "test docker"
           command: |
             env
-            docker ps
             unset DOCKER_MACHINE_NAME
+            docker ps
+            docker run --rm -it alpine echo aaa
       - run: *run_test
