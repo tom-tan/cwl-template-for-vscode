@@ -32,7 +32,7 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
   ```
 - CircleCI [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master)
   ```markdown
-  [![CircleCI](https://circleci.com/gh/$USER/$REPO.svg?style=svg)](https://circleci.com/gh/$USER/$REPO)
+  [![CircleCI](https://circleci.com/gh/$USER/$REPO.svg?style=shield)](https://circleci.com/gh/$USER/$REPO)
   ```
 - Gitlab CI [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
   ```markdown
