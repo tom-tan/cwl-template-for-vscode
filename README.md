@@ -28,7 +28,7 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
 
   Replace `$WORKFLOW_NAME` with your GitHub Actions Workflow name.
   ```markdown
-  [![Actions Status](https://github.com/{$USER}/{$REPO}/workflows/{$WORKFLOW_NAME}/badge.svg)](https://github.com/{$USER}/{$REPO}/actions)
+  [![Actions Status](https://github.com/$USER/$REPO/workflows/$WORKFLOW_NAME/badge.svg)](https://github.com/$USER/$REPO/actions)
   ```
 - CircleCI [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master)
   ```markdown
