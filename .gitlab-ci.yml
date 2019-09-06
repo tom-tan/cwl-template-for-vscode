@@ -22,7 +22,7 @@ before_script:
     "deb [arch=amd64] https://download.docker.com/linux/debian \
     $(lsb_release -cs) \
     stable"
-  - apt-get update && apt-get install -y --no-install-recommends docker-ce-cli
+  - apt-get update && apt-get install -y --no-install-recommends docker-ce-cli nodejs
 
 test:
   script:
