@@ -34,10 +34,11 @@ This is a template to write CWL definition with VSCode with remote container ext
   ```
 
 ## What is provided by this template?
-- Basic tools are already installed:
-  - `cwltool`, `cwl-runner`, `cwltest` and `nodejs` (for `InlineJavascriptRequirement`)
+- A container setting for VSCode. It provides the followings:
+  - basic tools such as `cwltool`, `cwl-runner`, `cwltest` and `nodejs` (for `InlineJavascriptRequirement`)
   - `docker` (you can use it without any configurations)
 - A template for `cwltest`
+- Templates for CI services (described below)
 
 ## Supported CI services
 This template provides configurations for several CI services.
