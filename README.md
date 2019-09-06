@@ -8,6 +8,31 @@ This is a template to write CWL definition with VSCode with remote container ext
 - Open the copied repository with remote container extension of VSCode.
 - Have fun!
 
+## How to run tests
+
+- Edit `test.yml`
+  - Each entry consists of input CWL file in `tool` field, input parameter file in `job` field and output object in `output` field (`doc` field is optional).
+  - Here is an example entry:
+  ```yaml
+  - job: job/cat-job.yml
+    tool: cwl/cat.cwl
+    output:
+      out:
+        class: File
+        basename: output.txt
+        checksum: sha1$2af1a59da667eb4aedb182248c1d91741df7e24d
+        size: 31
+    doc: Template for cwltest
+  ```
+  - You can add new entries for your tools and workflows. I assume that the CWL files are put in `cwl` directory, the input parameter files are put in `job` directory, and the example inputs are put in `data` directory.
+- Run test with the following command
+  ```console
+  $ cwltest --test test.yml
+  Test [1/1] Template for cwltest
+  ...
+  All tests passed
+  ```
+
 ## What is provided by this template?
 - Basic tools are already installed:
   - `cwltool`, `cwl-runner`, `cwltest` and `nodejs` (for `InlineJavascriptRequirement`)
