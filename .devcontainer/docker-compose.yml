@@ -8,6 +8,7 @@ services:
     working_dir: /workspace
     volumes:
       - ..:/workspace
+      - /tmp:/tmp
     command: dockerd-entrypoint.sh
   dev:
     build:
@@ -18,4 +19,5 @@ services:
     working_dir: /workspace
     volumes:
       - ..:/workspace
+      - /tmp:/tmp
     command: sleep infinity
