@@ -1,7 +1,7 @@
 # What is this?
 This is a template to write CWL definition with VSCode with remote container extension.
 
-[![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master)
+[![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template) [![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
 
 ## How to use
 - Copy this repository to your local machine.
@@ -50,8 +50,7 @@ Replace `$USER` with your account name and `$REPO` with your repository name.
   ```markdown
   [![Build Status](https://travis-ci.com/$USER/$REPO.svg?branch=master)](https://travis-ci.com/$USER/$REPO)
   ```
-- Github Actions
-
+- Github Actions [![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions)
   Replace `$WORKFLOW_NAME` with your GitHub Actions Workflow name.
   ```markdown
   [![Actions Status](https://github.com/$USER/$REPO/workflows/$WORKFLOW_NAME/badge.svg)](https://github.com/$USER/$REPO/actions)
