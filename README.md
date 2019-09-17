@@ -4,7 +4,8 @@ This is a template to write CWL definition with VSCode with remote container ext
 [![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template) [![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
 
 ## How to use
-- Copy this repository to your local machine.
+- Push the `Use this template` button in this repository and create a new repository for you.
+- Clone it to your local machine.
 - Open the copied repository with remote container extension of VSCode.
 - Have fun!
 
