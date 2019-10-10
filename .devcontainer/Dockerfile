@@ -22,6 +22,10 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends docker-ce-cli nodejs
 
 # install zatsu-cwl-generator
-RUN curl -fLSs https://github.com/tom-tan/zatsu-cwl-generator/releases/download/v1.0.4/zatsu-cwl-generator-v1.0.4-linux-x86_64.tar.xz  | tar Jxvf - && mv zatsu-cwl-generator /root/.local/bin && chmod 755 /root/.local/bin/zatsu-cwl-generator
+ARG zatsu_ver=v1.0.5
+RUN curl -fLSs https://.../download/${zatsu_ver}/zatsu-cwl-generator-${zatsu_ver}-linux-x86_64.tar.xz | \
+    tar Jxvf - && \
+    mv zatsu-cwl-generator /root/.local/bin && \
+    chmod 755 /root/.local/bin/zatsu-cwl-generator
 
 ENV DEBIAN_FRONTEND dialog
