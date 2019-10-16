@@ -21,3 +21,5 @@ services:
       - ..:/workspace
       - /tmp:/tmp
     command: sleep infinity
+    depends_on:
+      - "dind"
