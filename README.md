@@ -6,7 +6,7 @@ This is a template to write CWL definition with VSCode with remote container ext
 ## How to use
 - Push the `Use this template` button in this repository and create a new repository for you.
 - Clone it to your local machine.
-- Open the copied repository with remote container extension of VSCode.
+- Open the cloned repository with remote container extension of VSCode.
 - Have fun!
 
 ## What is provided by this template?
