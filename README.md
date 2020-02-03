@@ -1,5 +1,5 @@
 # What is this?
-This is a template to write CWL definition with VSCode with remote container extension.
+This is a template to write CWL documents with VSCode with remote container extension.
 
 [![Build Status](https://travis-ci.com/tom-tan/cwl-for-remote-container-template.svg?branch=master)](https://travis-ci.com/tom-tan/cwl-for-remote-container-template) [![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
 
@@ -13,13 +13,15 @@ This is a template to write CWL definition with VSCode with remote container ext
 - A container setting for VSCode. It provides the followings:
   - basic tools such as `cwltool`, `cwl-runner`, `cwltest` and `nodejs` (for `InlineJavascriptRequirement`)
   - `docker` (you can use it without any configurations)
+  - [Rabix Benten](https://github.com/rabix/benten) and [zatsu-cwl-generator](zatsu-cwl-generator) to help writing CWL documents
+  - [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) for live coding
 - A template for `cwltest`
 - Templates for CI services (described below)
 
 ## How to run tests
 
 - Edit `test.yml`
-  - Each entry consists of input CWL file in `tool` field, input parameter file in `job` field and output object in `output` field (`doc` field is optional).
+  - Each entry consists of the input CWL file in `tool` field, the input parameter file in `job` field and the expected output object in `output` field (`doc` field is optional).
   - Here is an example entry:
   ```yaml
   - job: job/cat-job.yml
