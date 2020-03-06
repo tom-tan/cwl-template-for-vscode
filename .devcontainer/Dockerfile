@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV PATH /root/.local/bin:$PATH
 
 RUN pip install cwltool cwltest cwl-runner pipx
-RUN pipx install --spec git+https://github.com/rabix/benten.git benten
+RUN pipx install benten
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
