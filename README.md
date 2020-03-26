@@ -13,7 +13,7 @@ This is a template to write CWL documents with VSCode with remote container exte
 - A container setting for VSCode. It provides the followings:
   - basic tools such as `cwltool`, `cwl-runner`, `cwltest` and `nodejs` (for `InlineJavascriptRequirement`)
   - `docker` (you can use it without any configurations)
-  - [Rabix Benten](https://github.com/rabix/benten) and [zatsu-cwl-generator](zatsu-cwl-generator) to help writing CWL documents
+  - [Rabix Benten](https://github.com/rabix/benten) and [zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator) to help writing CWL documents
   - [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) for live coding
 - A template for `cwltest`
 - Templates for CI services (described below)
