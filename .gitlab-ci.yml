@@ -1,4 +1,4 @@
-image: python:3.9.0-slim-buster
+image: python:3.9-buster
 
 services:
   - docker:stable-dind
