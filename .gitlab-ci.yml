@@ -1,4 +1,4 @@
-image: python:3.7-buster
+image: python:3.9.0-slim-buster
 
 services:
   - docker:stable-dind
@@ -28,7 +28,7 @@ before_script:
 test:
   script:
     - mkdir -p $TMPDIR
-    - cwltest --verbose --test test.yml --junit-xml=results.xml
+    - cwltest --test test.yml --junit-xml=results.xml
   artifacts:
     reports:
       junit: results.xml
