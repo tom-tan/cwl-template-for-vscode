@@ -5,6 +5,7 @@ services:
 
 variables:
   DOCKER_HOST: tcp://docker:2375/
+  TMPDIR: /builds/$CI_PROJECT_PATH/tmp
 
 before_script:
   - pip install cwl-runner cwltest
@@ -26,6 +27,7 @@ before_script:
 
 test:
   script:
+    - mkdir -p $TMPDIR
     - cwltest --verbose --test test.yml --junit-xml=results.xml
   artifacts:
     reports:
