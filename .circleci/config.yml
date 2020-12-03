@@ -6,23 +6,24 @@ references:
       command: "git clone $CIRCLE_REPOSITORY_URL /tmp/_circleci_local_build_repo"
     install_python: &install_python
       name: "Install Python"
-      command: "sudo killall -9 apt-get || true && \
-      sudo apt update && \
-      sudo apt install -y python3 python3-pip nodejs"
+      command: |
+        sudo killall -9 apt-get || true
+        sudo apt-get update
+        sudo apt-get install -y python3 python3-pip nodejs
     exec_upgrade_pip: &exec_upgrade_pip
       name: "Upgrade pip, wheel and setuptools"
       command: "sudo pip3 install -U pip wheel setuptools"
     install_cwl_runner: &install_cwl_runner
       name: "Install cwl-runner"
-      command: "sudo pip3 install cwltest cwl-runner ruamel.yaml==0.15.97"
+      command: "sudo pip3 install cwltest cwl-runner"
     run_test: &run_test
       name: "Run test"
-      command: "sudo cwltest --test test.yml"
+      command: "cwltest --test test.yml"
 jobs:
   build:
     working_directory: /tmp/cwl_test
     machine:
-      image: ubuntu-1604:201903-01
+      image: ubuntu-2004:202010-01
     steps:
       - run: *setup_repo
       - checkout
