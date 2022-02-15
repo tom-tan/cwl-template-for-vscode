@@ -11,6 +11,10 @@ jobs:
       run: |
         sudo apt-get install -y python3-pip python3-wheel python3-setuptools build-essential nodejs
         sudo pip3 install --system cwltest cwl-runner ruamel.yaml==0.15.97
-    - name: Run test
-      run: |
-        cwltest --test test.yml
+    - name: Run tests
+      id: run-tests
+      uses: common-workflow-lab/run-tests@v1
+      with:
+        test-list: test.yml
+        runner: cwltool
+        timeout: 30
