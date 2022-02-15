@@ -7,10 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install prerequirements
-      run: |
-        sudo apt-get install -y python3-pip python3-wheel python3-setuptools build-essential nodejs
-        sudo pip3 install --system cwltest cwl-runner ruamel.yaml==0.15.97
+    - name: Setup python for cwltool
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.x'
+    - name: Install cwltool
+      run: pip install cwltool
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
     - name: Run tests
       id: run-tests
       uses: common-workflow-lab/run-tests@v1
