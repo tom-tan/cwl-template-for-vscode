@@ -1,9 +1,33 @@
 {
-	"dockerComposeFile": "docker-compose.yml",
+	"name": "CWL",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": { 
+			// Update 'VARIANT' to pick a Python version: 3, 3.10, 3.9, 3.8, 3.7, 3.6
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use -bullseye variants on local on arm64/Apple Silicon.
+			"VARIANT": "3.10-bullseye",
+			// Options
+			"NODE_VERSION": "lts/*"
+		}
+	},
 
-	"service": "dev",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"sbg-rabix.benten-cwl",
+				"ms-vsliveshare.vsliveshare"
+			]
+		}
+	},
 
-	"workspaceFolder": "/workspace",
-
-	"extensions": ["sbg-rabix.benten-cwl", "ms-vsliveshare.vsliveshare"]
+	"remoteUser": "vscode",
+	"features": {
+		"docker-in-docker": "latest",
+		"git": "os-provided"
+	}
 }
