@@ -13,7 +13,7 @@ RUN pip install cwltool cwltest cwl-runner pipx
 RUN pipx install benten
 
 # install zatsu-cwl-generator
-ARG zatsu_ver=v1.1.0
+ARG zatsu_ver=v1.1.1
 
 RUN curl -fLSs https://github.com/tom-tan/zatsu-cwl-generator/releases/download/${zatsu_ver}/zatsu-cwl-generator-${zatsu_ver}-linux-x86_64.tar.xz | \
     tar Jxvf - && \
