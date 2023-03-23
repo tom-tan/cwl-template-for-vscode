@@ -7,3 +7,4 @@
       checksum: sha1$2af1a59da667eb4aedb182248c1d91741df7e24d
       size: 31
   doc: Template for cwltest
+  id: test-example
