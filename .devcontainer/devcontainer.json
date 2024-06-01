@@ -25,7 +25,7 @@
 		}
 	},
 
-	"remoteUser": "vscode",
+	"containerUser": "vscode",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": "latest",
 		"ghcr.io/devcontainers/features/git:1": "os-provided"
