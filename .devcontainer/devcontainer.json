@@ -7,9 +7,10 @@
 			// Update 'VARIANT' to pick a Python version: 3, 3.10, 3.9, 3.8, 3.7, 3.6
 			// Append -bullseye or -buster to pin to an OS version.
 			// Use -bullseye variants on local on arm64/Apple Silicon.
-			"VARIANT": "3.10-bullseye",
+			"VARIANT": "3.12-bookworm",
 			// Options
-			"NODE_VERSION": "lts/*"
+			"NODE_VERSION": "lts/*",
+			"zatsu_ver": "v1.1.2"
 		}
 	},
 
@@ -17,11 +18,16 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
+			"settings": {
+				"files.associations": {
+					"*.cwl": "yaml"
+				}
+			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"sbg-rabix.benten-cwl",
+				"redhat.vscode-yaml",
 				"ms-vsliveshare.vsliveshare"
-			]
+			],
 		}
 	},
 
