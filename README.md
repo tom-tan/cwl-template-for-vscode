@@ -1,7 +1,7 @@
 # What is this?
 This is a template to write CWL documents with VSCode with remote container extension.
 
-[![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
+[![Actions Status](https://github.com/tom-tan/cwl-template-for-vscode/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-template-for-vscode/actions) [![CircleCI](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master.svg?style=shield)](https://circleci.com/gh/tom-tan/cwl-for-remote-container-template/tree/master) [![pipeline status](https://gitlab.com/tom-tan/cwl-for-remote-container-template/badges/master/pipeline.svg)](https://gitlab.com/tom-tan/cwl-for-remote-container-template/commits/master)
 
 ## Requirements
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -55,7 +55,7 @@ All you have to do is just integrating your repository with CI services.
 Each CI service executes tests listed in `test.yml` by using `cwltest`.
 
 Replace `$USER` with your account name and `$REPO` with your repository name.
-- Github Actions [![Actions Status](https://github.com/tom-tan/cwl-for-remote-container-template/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-for-remote-container-template/actions)
+- Github Actions [![Actions Status](https://github.com/tom-tan/cwl-template-for-vscode/workflows/CI/badge.svg)](https://github.com/tom-tan/cwl-template-for-vscode/actions)
   - Replace `$WORKFLOW_NAME` with your GitHub Actions Workflow name.
   ```markdown
   [![Actions Status](https://github.com/$USER/$REPO/workflows/$WORKFLOW_NAME/badge.svg)](https://github.com/$USER/$REPO/actions)
